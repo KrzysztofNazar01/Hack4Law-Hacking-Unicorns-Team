@@ -1,0 +1,14 @@
+form {
+    width: 1000px;
+    aspect-ratio: 1 / 1.4142;
+}
+
+h3 {
+    padding-block: 2rem;
+}
+
+input {
+    border-radius: 0.5rem;
+    border: 1px black solid;
+    padding: 0;
+}
