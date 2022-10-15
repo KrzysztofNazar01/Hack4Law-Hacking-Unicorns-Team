@@ -13,16 +13,14 @@ class Question(models.Model):
     court_department = models.CharField(max_length=50, default="")
     court_address = models.CharField(max_length=50, default="")
 
-    prosecutor_name = models.CharField(max_length=50, default="")
-    prosecutor_surname = models.CharField(max_length=50, default="")
+    prosecutor_name_surname = models.CharField(max_length=50, default="")
     prosecutor_address = models.CharField(max_length=50, default="")
     prosecutor_pesel = models.CharField(max_length=50, default="")
     prosecutor_parent_name = models.CharField(max_length=50, default="")
     prosecutor_parent_surname = models.CharField(max_length=50, default="")
     prosecutor_parent_pesel = models.CharField(max_length=50, default="")
 
-    defendant_name = models.CharField(max_length=50, default="")
-    defendant_surname = models.CharField(max_length=50, default="")
+    defendant_name_surname = models.CharField(max_length=50, default="")
     defendant_address = models.CharField(max_length=50, default="")
 
     wps = models.CharField(max_length=50, default="")

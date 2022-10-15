@@ -11,16 +11,13 @@ class UploadForm(ModelForm):
     court_department = forms.CharField()
     court_address = forms.CharField()
     
-    prosecutor_name = forms.CharField(label="małoletni: imię")
-    prosecutor_surname = forms.CharField(label="małoletni: nazwisko")
-    prosecutor_address = forms.CharField(label="małoletni: adres")
-    prosecutor_pesel = forms.CharField(label="małoletni: pesel")
-    prosecutor_parent_name = forms.CharField(label="rodzic: imię")
-    prosecutor_parent_surname = forms.CharField(label="rodzic: nazwisko")
-    prosecutor_parent_pesel = forms.CharField(label="rodzic: pesel")
-    defendant_name = forms.CharField(label="pozwany: imię")
-    defendant_surname = forms.CharField(label="pozwany: nazwisko")
-    defendant_address = forms.CharField(label="pozwany: adres")
+    prosecutor_name_surname = forms.CharField()
+    prosecutor_address = forms.CharField()
+    prosecutor_pesel = forms.CharField()
+    prosecutor_parent_name_surname = forms.CharField()
+    prosecutor_parent_pesel = forms.CharField()
+    defendant_name_surname = forms.CharField()
+    defendant_address = forms.CharField()
 
     wps = forms.CharField()
 
@@ -32,8 +29,7 @@ class UploadForm(ModelForm):
     lawsuit_2_alimony_date_end = forms.CharField()
     lawsuit_3_attachment_title = forms.CharField()  # ????
     lawsuit_4_other_details = forms.CharField()
-    lawsuit_5_name = forms.CharField()
-    lawsuit_5_surname = forms.CharField()
+    lawsuit_5_name_surname = forms.CharField()
     lawsuit_5_address = forms.CharField()
     lawsuit_6_field = forms.CharField()
 
@@ -74,15 +70,12 @@ class UploadForm(ModelForm):
                   'court_department',
                   'court_address',
 
-                  'prosecutor_name',
-                  'prosecutor_surname',
+                  'prosecutor_name_surname',
                   'prosecutor_address',
                   'prosecutor_pesel',
-                  'prosecutor_parent_name',
-                  'prosecutor_parent_surname',
+                  'prosecutor_parent_name_surname',
                   'prosecutor_parent_pesel',
-                  'defendant_name',
-                  'defendant_surname',
+                  'defendant_name_surname',
                   'defendant_address',
 
                   'wps',
@@ -94,8 +87,7 @@ class UploadForm(ModelForm):
                   'lawsuit_2_alimony_date_end',
                   'lawsuit_3_attachment_title',
                   'lawsuit_4_other_details',
-                  'lawsuit_5_name',
-                  'lawsuit_5_surname',
+                  'lawsuit_5_name_surname',
                   'lawsuit_5_address',
                   'lawsuit_6_field',
 
