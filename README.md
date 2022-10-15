@@ -57,4 +57,4 @@ problem:
  - lepiej dac jeden formularz, i pokazac co ma byc zautomatyzowane -> skupiamy sie na jednym typie pozwów
  - jakie dalsze problemy moze rozwiazywac
  - polaczyc sie z azurem
- 
+ - logowanie z profilu zaufanego
