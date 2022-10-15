@@ -12,3 +12,33 @@ input {
     border: 1px black solid;
     padding: 0;
 }
+
+@media print {
+    input {
+        background: transparent;
+        border: none;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    input[type="submit"],
+    input::-webkit-file-upload-button,
+    input::file-selector-button {
+        display: none;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: "";
+    }
+}
