@@ -1,0 +1,1 @@
+web: gunicorn elawsuit.wsgi --log-file -
