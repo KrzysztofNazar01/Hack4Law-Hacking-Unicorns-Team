@@ -10,4 +10,4 @@ def index(request):
 
 
 def alimony(request):
-    return render(request, "aaa.html")
+    return render(request, "alimony_view_1.html")
