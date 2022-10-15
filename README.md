@@ -10,12 +10,20 @@ The app will run by default on port 8080.
 python manage.py runserver
 ```
 
-Acces the main page on "127.0.0.1:8000/polls/".
+Acces the main page on [127.0.0.1:8000/polls/](127.0.0.1:8000/polls/).
 
 ## Task description
 Elektroniczne postępowanie upominawcze jako system teleinformatyczny obsługuje elektroniczne postępowanie upominawcze. Pisma wniesione za pośrednictwem systemu wywołują skutki prawne, jakie ustawa wiąże z wniesieniem do sądu. Pisma procesowe mają postać gotowych do uzupełnienia elektronicznych formularzy. Przedmiotowe znacznie minimalizuje ryzyko popełnienia błędu. Należy przy tym zauważyć, że EPU zajmuje się tylko sprawami nieskomplikowanymi i stosunkowo prostymi do rozstrzygnięcia.
 
 W przypadku spraw skomplikowanych, pozwów tradycyjnych, powód nie posiada elektronicznego formularza, który jest gotowy do uzupełniania. Rozwiązanie powinno stanowić pomoc w wypełnieniu pozwu, umożliwiać zebranie materiału dowodowego, jego analizę, podpowiadać treść (bloki tekstowe), automatycznie wskazywać właściwość, wartość przedmiotu sporu, stan faktyczny i prawny.
+
+## Main functionalities
+ 1. Page [127.0.0.1:8000/polls/form/](127.0.0.1:8000/polls/form/) show the form to fill out.
+ 2. Page [127.0.0.1:8000/polls/form/<id>](127.0.0.1:8000/polls/form/<id>) show the details about the form of particular id.
+ 3. Page [127.0.0.1:8000/polls/courtsinfo/](127.0.0.1:8000/polls/courtsinfo/) displays JSON file representing all avaliable courts in the database.
+
+
+
 ## Plan of project
  - topic: E-pozew (złóż mnie)
  - o tym jakie dokuemnty trzeba zlozyc do pisma, sa wpisane w kodeksie. Za kazdym razem te elementy są troche inne.

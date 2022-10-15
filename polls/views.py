@@ -1,5 +1,7 @@
+import sys
 from urllib import request
-
+import json
+from django.core.management import call_command
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import redirect
@@ -32,8 +34,21 @@ from .models import Question
 
 
 def details(request, id):
-    obj = Question.objects.get(pk=id)
-    data = serializers.serialize('json', [obj, ])
-    struct = json.loads(data)
-    data = json.dumps(struct[0])
-    return HttpResponse(data, content_type='application/json')
+    try:
+        obj = Question.objects.get(pk=id)
+        data = serializers.serialize('json', [obj, ])
+        struct = json.loads(data)
+        data = json.dumps(struct[0])
+        return HttpResponse(data, content_type='application/json')
+    except:
+        data = serializers.serialize('json', ["Invalid id", ])
+        struct = json.loads(data)
+        data = json.dumps(struct[0])
+        return HttpResponse(data, content_type='application/json')
+
+
+def courtsInfo(request):
+    f = open('courtsInfo.json')
+    struct = json.load(f)
+    courtsJson = json.dumps(struct)
+    return HttpResponse(courtsJson, content_type='application/json')
