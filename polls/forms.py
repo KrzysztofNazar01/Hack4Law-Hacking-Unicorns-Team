@@ -24,6 +24,7 @@ class UploadForm(ModelForm):
     lawsuit_1_defendant_name_and_surname = forms.CharField()
     lawsuit_1_prosecutor_name_and_surname = forms.CharField()
     lawsuit_1_prosecutor_birth = forms.CharField()
+    lawsuit_1_prosecutor_price = forms.CharField()
     lawsuit_1_alimony_date_end = forms.CharField()
     lawsuit_2_alimony_price = forms.CharField()
     lawsuit_2_alimony_date_end = forms.CharField()
@@ -82,6 +83,7 @@ class UploadForm(ModelForm):
                   'lawsuit_1_defendant_name_and_surname',
                   'lawsuit_1_prosecutor_name_and_surname',
                   'lawsuit_1_prosecutor_birth',
+                  'lawsuit_1_prosecutor_price',
                   'lawsuit_1_alimony_date_end',
                   'lawsuit_2_alimony_price',
                   'lawsuit_2_alimony_date_end',

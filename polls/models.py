@@ -28,6 +28,7 @@ class Question(models.Model):
     lawsuit_1_defendant_name_and_surname = models.CharField(max_length=50, default="")
     lawsuit_1_prosecutor_name_and_surname = models.CharField(max_length=50, default="")
     lawsuit_1_prosecutor_birth = models.CharField(max_length=50, default="")
+    lawsuit_1_prosecutor_price = models.CharField(max_length=50, default="")
     lawsuit_1_alimony_date_end = models.CharField(max_length=50, default="")
     lawsuit_2_alimony_price = models.CharField(max_length=50, default="")
     lawsuit_2_alimony_date_end = models.CharField(max_length=50, default="")
