@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.conf.global_settings import MEDIA_ROOT
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'elawsuit',
     'polls',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -139,4 +142,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static/"),
 )
+
 
