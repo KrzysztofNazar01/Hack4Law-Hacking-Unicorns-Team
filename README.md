@@ -1,10 +1,49 @@
 # Hack4Law Hacking Unicorns Team
 
+## Authors
+ - **Karolina Wilamowska** - buisness site
+ - **Samuel Jędrzejewski** - frontend developer
+ - **Michał Woźniak** - frontend developer
+ - **Krzysztof Nazar** - backend developer
+
+
+## The goal of the project
+🇵🇱
+
+Ten projekt powstał jako rozwiązanie [Hack4Law](https://hack4law.pl/) - hackathon, który łączy technologie i prawo. Była to druga edycja tego wydarzenia - pierwsz miała miejsce w 2021 r. W tegorocznej edycji wzięło udział około 80 uczestników, którzy stworzyli razem około 20 drużyn.
+
+
+
+🇬🇧
+
+This project was created as a solution to task during [Hack4Law](https://hack4law.pl/) - a hackathon that connects echnology with law. It was the second edition of this event - the first one took place in 2021. In this edition there were about 80 participants who created 20 teams.
+
 ## Live page
+🇵🇱
+
+Zobacz tą stronę na żywo [pod tym linkiem](https://elawsuit-programming-unicorns.herokuapp.com/polls)
+
+
+
+🇬🇧
 
 This web app is avaliable live with [this link](https://elawsuit-programming-unicorns.herokuapp.com/polls)
 
 ## Running the application
+🇵🇱
+
+Aplikacja działa domyślnie na porcie 8080.
+
+```python
+python manage.py runserver
+```
+
+Wejdź na stronę wpisując w przeglądarkę [127.0.0.1:8000/polls/](127.0.0.1:8000/polls/).
+
+
+
+🇬🇧
+
 The app will run by default on port 8080.
 
 ```python
@@ -14,7 +53,9 @@ python manage.py runserver
 Acces the main page on [127.0.0.1:8000/polls/](127.0.0.1:8000/polls/).
 
 
-## Task main goal
+## Task assumptions
+🇵🇱
+
 Założenia:
  1.	Formularz pozwu alimentacyjnego – w wersji prezentowanej pozew o alimenty (zakładając rozwój aplikacji przewidujemy inne warianty pozwu – o podwyższenie alimentów, o wygaśnięcie obowiązku alimentacyjnego, o obniżenie alimentów);
  2.	W pozwie alimentacyjnym przewidujemy rozwiązanie w postaci kalkulatora wysokości alimentów – na podstawie zaproponowanych kategorii przeliczany jest miesięczny koszt utrzymania, stanowiący bazę do ustalenia wysokości dochodzonych alimentów;
@@ -28,18 +69,33 @@ Założenia:
  10.	Dalsza funkcjonalność zakłada również możliwość złożenia przez stronę wniosku o zwolnienie od kosztów (dotyczy zobowiązanego) oraz wniosku o ustanowienie pełnomocnika.
 
 ## Task description
+🇵🇱
+
 Elektroniczne postępowanie upominawcze jako system teleinformatyczny obsługuje elektroniczne postępowanie upominawcze. Pisma wniesione za pośrednictwem systemu wywołują skutki prawne, jakie ustawa wiąże z wniesieniem do sądu. Pisma procesowe mają postać gotowych do uzupełnienia elektronicznych formularzy. Przedmiotowe znacznie minimalizuje ryzyko popełnienia błędu. Należy przy tym zauważyć, że EPU zajmuje się tylko sprawami nieskomplikowanymi i stosunkowo prostymi do rozstrzygnięcia.
 
 W przypadku spraw skomplikowanych, pozwów tradycyjnych, powód nie posiada elektronicznego formularza, który jest gotowy do uzupełniania. Rozwiązanie powinno stanowić pomoc w wypełnieniu pozwu, umożliwiać zebranie materiału dowodowego, jego analizę, podpowiadać treść (bloki tekstowe), automatycznie wskazywać właściwość, wartość przedmiotu sporu, stan faktyczny i prawny.
 
 ## Main functionalities
+🇵🇱
+ 1. Strona [127.0.0.1:8000/polls/form/](127.0.0.1:8000/polls/form/) wyświetla formularz.
+ 2. Strona [127.0.0.1:8000/polls/form/<id>](127.0.0.1:8000/polls/form/<id>) pokazuje szczegóły odpowiedzi o danym id. Jeśli w bazie odpowiedzi nie ma odpowiedzi o danym id, zwracany jest plik JSON z informacją o błędzie. 
+ 3. Strona [127.0.0.1:8000/polls/courtsinfo/](127.0.0.1:8000/polls/courtsinfo/) zwraca plik JSON zawierający podstawowe informacje na temat sądów rejonowych w Polsce. 
+ 4. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/login/) pozwala na logowanie użytkownika.
+ 5. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/logout/) pozwala na wylogowanie użytkownika.
+ 6. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/admin/) pozwala na zarządzanie bazą danych oraz bazą użytkowników.
+
+ 
+🇬🇧
  1. Page [127.0.0.1:8000/polls/form/](127.0.0.1:8000/polls/form/) show the form to fill out.
  2. Page [127.0.0.1:8000/polls/form/<id>](127.0.0.1:8000/polls/form/<id>) show the details about the form of particular id. If wrong id is used, a JSON file with error message is returned.
  3. Page [127.0.0.1:8000/polls/courtsinfo/](127.0.0.1:8000/polls/courtsinfo/) displays JSON file representing all avaliable courts in the database. Can be used with AJAX to make the proccess of filling out the form more comfortable for the user.
-
+ 4. Page [127.0.0.1:8000/login/](127.0.0.1:8000/login/) allows to login.
+ 5. Page [127.0.0.1:8000/login/](127.0.0.1:8000/logout/) allows to logout.
+ 6. Page [127.0.0.1:8000/login/](127.0.0.1:8000/admin/) allows to manage the database and the users.
 
 
 ## Plan of project
+🇵🇱
  - topic: E-pozew (złóż mnie)
  - o tym jakie dokuemnty trzeba zlozyc do pisma, sa wpisane w kodeksie. Za kazdym razem te elementy są troche inne.
  - każdy sąd ma swój wzorzec dokumnetów
@@ -75,6 +131,7 @@ problem:
 
 
 ## Future improvements
+ 🇵🇱
  - automatyzcja obliczania kosztow
  - co bedzie innowacyjne w tym podejsciu?
  - lepiej dac jeden formularz, i pokazac co ma byc zautomatyzowane -> skupiamy sie na jednym typie pozwów
