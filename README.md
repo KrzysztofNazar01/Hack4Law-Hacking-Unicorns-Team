@@ -1,13 +1,17 @@
-# Hack4Law-Hacking-Unicorns-Team
+# Hack4Law Hacking Unicorns Team
 
 ## Live page
 This web app is avaliable live with [this link](https://elawsuit-programming-unicorns.herokuapp.com/polls)
 
 ## Running the application
+The app will run by default on port 8080.
 
-'''
-    python manage.py runserver
-'''
+```python
+python manage.py runserver
+```
+
+Acces the main page on "127.0.0.1:8000/polls/".
+
 ## Task description
 Elektroniczne postępowanie upominawcze jako system teleinformatyczny obsługuje elektroniczne postępowanie upominawcze. Pisma wniesione za pośrednictwem systemu wywołują skutki prawne, jakie ustawa wiąże z wniesieniem do sądu. Pisma procesowe mają postać gotowych do uzupełnienia elektronicznych formularzy. Przedmiotowe znacznie minimalizuje ryzyko popełnienia błędu. Należy przy tym zauważyć, że EPU zajmuje się tylko sprawami nieskomplikowanymi i stosunkowo prostymi do rozstrzygnięcia.
 
