@@ -4,7 +4,7 @@
 This web app is avaliable live with [this link](address)
 
 ## Running the application
-asd
+
 '''
     python manage.py runserver
 '''
