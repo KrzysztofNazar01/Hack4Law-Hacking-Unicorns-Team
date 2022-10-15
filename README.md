@@ -1,7 +1,7 @@
 # Hack4Law Hacking Unicorns Team
 
 ## Authors
- - **Karolina Wilamowska** - buisness site
+ - **Karolina Wilamowska** - buisness side
  - **Samuel Jędrzejewski** - frontend developer
  - **Michał Woźniak** - frontend developer
  - **Krzysztof Nazar** - backend developer
