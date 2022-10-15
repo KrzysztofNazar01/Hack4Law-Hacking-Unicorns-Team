@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'elawsuit',
     'polls',
-    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
