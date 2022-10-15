@@ -9,20 +9,29 @@
 
 ## The goal of the project
 🇵🇱
+
 Ten projekt powstał jako rozwiązanie [Hack4Law](https://hack4law.pl/) - hackathon, który łączy technologie i prawo. Była to druga edycja tego wydarzenia - pierwsz miała miejsce w 2021 r. W tegorocznej edycji wzięło udział około 80 uczestników, którzy stworzyli razem około 20 drużyn.
 
+
+
 🇬🇧
+
 This project was created as a solution to task during [Hack4Law](https://hack4law.pl/) - a hackathon that connects echnology with law. It was the second edition of this event - the first one took place in 2021. In this edition there were about 80 participants who created 20 teams.
 
 ## Live page
 🇵🇱
+
 Zobacz tą stronę na żywo [pod tym linkiem](https://elawsuit-programming-unicorns.herokuapp.com/polls)
 
+
+
 🇬🇧
+
 This web app is avaliable live with [this link](https://elawsuit-programming-unicorns.herokuapp.com/polls)
 
 ## Running the application
 🇵🇱
+
 Aplikacja działa domyślnie na porcie 8080.
 
 ```python
@@ -31,7 +40,10 @@ python manage.py runserver
 
 Wejdź na stronę wpisując w przeglądarkę [127.0.0.1:8000/polls/](127.0.0.1:8000/polls/).
 
+
+
 🇬🇧
+
 The app will run by default on port 8080.
 
 ```python
@@ -43,6 +55,7 @@ Acces the main page on [127.0.0.1:8000/polls/](127.0.0.1:8000/polls/).
 
 ## Task assumptions
 🇵🇱
+
 Założenia:
  1.	Formularz pozwu alimentacyjnego – w wersji prezentowanej pozew o alimenty (zakładając rozwój aplikacji przewidujemy inne warianty pozwu – o podwyższenie alimentów, o wygaśnięcie obowiązku alimentacyjnego, o obniżenie alimentów);
  2.	W pozwie alimentacyjnym przewidujemy rozwiązanie w postaci kalkulatora wysokości alimentów – na podstawie zaproponowanych kategorii przeliczany jest miesięczny koszt utrzymania, stanowiący bazę do ustalenia wysokości dochodzonych alimentów;
@@ -57,6 +70,7 @@ Założenia:
 
 ## Task description
 🇵🇱
+
 Elektroniczne postępowanie upominawcze jako system teleinformatyczny obsługuje elektroniczne postępowanie upominawcze. Pisma wniesione za pośrednictwem systemu wywołują skutki prawne, jakie ustawa wiąże z wniesieniem do sądu. Pisma procesowe mają postać gotowych do uzupełnienia elektronicznych formularzy. Przedmiotowe znacznie minimalizuje ryzyko popełnienia błędu. Należy przy tym zauważyć, że EPU zajmuje się tylko sprawami nieskomplikowanymi i stosunkowo prostymi do rozstrzygnięcia.
 
 W przypadku spraw skomplikowanych, pozwów tradycyjnych, powód nie posiada elektronicznego formularza, który jest gotowy do uzupełniania. Rozwiązanie powinno stanowić pomoc w wypełnieniu pozwu, umożliwiać zebranie materiału dowodowego, jego analizę, podpowiadać treść (bloki tekstowe), automatycznie wskazywać właściwość, wartość przedmiotu sporu, stan faktyczny i prawny.
@@ -70,6 +84,7 @@ W przypadku spraw skomplikowanych, pozwów tradycyjnych, powód nie posiada elek
  5. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/logout/) pozwala na wylogowanie użytkownika.
  6. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/admin/) pozwala na zarządzanie bazą danych oraz bazą użytkowników.
 
+ 
 🇬🇧
  1. Page [127.0.0.1:8000/polls/form/](127.0.0.1:8000/polls/form/) show the form to fill out.
  2. Page [127.0.0.1:8000/polls/form/<id>](127.0.0.1:8000/polls/form/<id>) show the details about the form of particular id. If wrong id is used, a JSON file with error message is returned.
