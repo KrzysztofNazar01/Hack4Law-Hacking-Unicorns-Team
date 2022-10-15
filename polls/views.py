@@ -41,9 +41,8 @@ def details(request, id):
         data = json.dumps(struct[0])
         return HttpResponse(data, content_type='application/json')
     except:
-        data = serializers.serialize('json', ["Invalid id", ])
-        struct = json.loads(data)
-        data = json.dumps(struct[0])
+        struct = {"error_message": "wrong form id"}
+        data = json.dumps(struct)
         return HttpResponse(data, content_type='application/json')
 
 
