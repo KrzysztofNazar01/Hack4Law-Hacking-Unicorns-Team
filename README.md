@@ -12,6 +12,20 @@ python manage.py runserver
 
 Acces the main page on [127.0.0.1:8000/polls/](127.0.0.1:8000/polls/).
 
+
+## Task main goal
+Założenia:
+ 1.	Formularz pozwu alimentacyjnego – w wersji prezentowanej pozew o alimenty (zakładając rozwój aplikacji przewidujemy inne warianty pozwu – o podwyższenie alimentów, o wygaśnięcie obowiązku alimentacyjnego, o obniżenie alimentów);
+ 2.	W pozwie alimentacyjnym przewidujemy rozwiązanie w postaci kalkulatora wysokości alimentów – na podstawie zaproponowanych kategorii przeliczany jest miesięczny koszt utrzymania, stanowiący bazę do ustalenia wysokości dochodzonych alimentów;
+ 3.	W formularzu pozwu zakładamy, iż aplikacja weryfikować będzie właściwość miejscową sądu oraz wskazywać właściwy wydział dla danego adresu; 
+ 4.	W formularzu, na podstawie dochodzonej wysokości żądania alimentacyjnego automatycznie liczona jest wartość przedmiotu sporu;
+ 5.	Formularz zawiera podpowiedzi jakie załączniki powinny zostać załączone (odpisy aktów urodzenia; faktury potwierdzające wydatki; zaświadczenie o dochodach);
+ 6.	W wariancie podstawowym, zainteresowana strona może wydrukować wygenerowany pozew, podpisać i złożyć do sądu wraz z załącznikami;
+ 7.	W wersji bardziej zaawansowanej, pozew zostaje wygenerowany w systemie, opatrzony bezpiecznym podpisem i złożony do sądu (zakładamy integrację z systemem sądowym pozwalającym na otrzymanie dokumentacji, nadanie sygnatury i procedowanie);
+ 8.	Przewidujemy funkcjonalność polegającą na tym, iż strona wskazuje w pozwie numer aktu stanu cywilnego, który jest pobierany przez sąd po otrzymaniu akt – rozwiązanie takie z jednej strony pozwoli na ograniczenie konieczności drukowania dokumentów z aktów stanu cywilnego, ograniczy związane z tym koszty – w tym przypadku strona jest zwolniona od opłaty skarbowej, ponadto przyspieszy postępowanie, bowiem częstokroć strona zmuszona jest oczekiwać na możliwość odebrania z urzędu dokumentu akt stanu); oczywiście zakłada to możliwość pozyskania przez sąd takiego dokumentu, co jest niezależne od nas;
+ 9.	W ramach dalszej funkcjonalności – w przypadku pozwów, gdzie po stronie powodowej jest zobowiązany, a nie uprawniony – zakładamy powiązanie z modułem pozwalającym na automatyczne uiszczenie płatności – bądź to w systemie płatności sądowych, bądź w formule szybkiego przelewu, względnie dołączenia dokumentu potwierdzającego przelew); wysokość opłaty winna zostać wygenerowana bezpośrednio na podstawie wyliczonej wartości przedmiotu sporu;
+ 10.	Dalsza funkcjonalność zakłada również możliwość złożenia przez stronę wniosku o zwolnienie od kosztów (dotyczy zobowiązanego) oraz wniosku o ustanowienie pełnomocnika.
+
 ## Task description
 Elektroniczne postępowanie upominawcze jako system teleinformatyczny obsługuje elektroniczne postępowanie upominawcze. Pisma wniesione za pośrednictwem systemu wywołują skutki prawne, jakie ustawa wiąże z wniesieniem do sądu. Pisma procesowe mają postać gotowych do uzupełnienia elektronicznych formularzy. Przedmiotowe znacznie minimalizuje ryzyko popełnienia błędu. Należy przy tym zauważyć, że EPU zajmuje się tylko sprawami nieskomplikowanymi i stosunkowo prostymi do rozstrzygnięcia.
 
