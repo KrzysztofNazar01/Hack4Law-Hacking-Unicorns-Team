@@ -1,7 +1,7 @@
 # Hack4Law-Hacking-Unicorns-Team
 
 ## Live page
-This web app is avaliable live with [this link](address)
+This web app is avaliable live with [this link](https://elawsuit-programming-unicorns.herokuapp.com/polls)
 
 ## Running the application
 
