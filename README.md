@@ -10,7 +10,7 @@
 ## The goal of the project
 🇵🇱
 
-Ten projekt powstał jako rozwiązanie [Hack4Law](https://hack4law.pl/) - hackathon, który łączy technologie i prawo. Była to druga edycja tego wydarzenia - pierwsz miała miejsce w 2021 r. W tegorocznej edycji wzięło udział około 80 uczestników, którzy stworzyli razem około 20 drużyn. 
+Ten projekt powstał jako rozwiązanie [Hack4Law](https://hack4law.pl/) - hackathon, który łączy technologie i prawo. Była to druga edycja tego wydarzenia - pierwsz miała miejsce w 2021 r. W tegorocznej edycji wzięło udział około 60 uczestników, którzy stworzyli razem 15 drużyn. 
 
 **Pomysł naszej drużyny, to stworzenie aplikacji webowej udostępniające formularze pozwów, która ułatwi ich wypełnianie oraz umożliwi płynną komunikację pomiędzy urzędami.** Dzięki wspólnej bazie danych, wypełnienia formualrzy będą dostępne dla odpowiednich instytucji sądowych. Jest to innowacyjne podejście, ponieważ aktualne serwisy sądowych instytucji zostały założone przez różne firmy i w różnych środowiskach. Nasze rozwiązanie pozwoliłoby ujednolicić i ustandaryzować wymianę informacji pomiędzy urzędami. Istotny jest także fakt, że dzięki naszemu systemowi dojdzie do mniejszej ilości błędów ludzkich, ponieważ podstawowe operacje zostaną zautomatyzowane. Na naszej stronie jest dostępny formularz pozwu alimentacyjnego służący za przykład. W przyszłości możliwe jest zaimplementowanie kolejnych formularzy prezentujące wnioski gotowe do wypełnienia. Po wypełnieniu wniosku, odpowiedzi wysyłane są do odpowiedniej instyucji wybieranej na podstawie kodu pocztowego z adresu zamieszkania pozywacjącego. Użytkownik może także zapisać formularz w formacie PDF, a następnie wydrukować swój wniosek. 
 
@@ -19,7 +19,7 @@ Szczegóły projektu znajdują się w punkcie dotyczącym [Założeń projektu](
 
 🇬🇧
 
-This project was created as a solution to task during [Hack4Law](https://hack4law.pl/) - a hackathon that connects echnology with law. It was the second edition of this event - the first one took place in 2021. In this edition there were about 80 participants who created 20 teams.
+This project was created as a solution to task during [Hack4Law](https://hack4law.pl/) - a hackathon that connects echnology with law. It was the second edition of this event - the first one took place in 2021. In this edition there were about 60 participants who created 15 teams.
 
 **The idea of our team is to create a web application that provides document templates. The application allows to fill them online and enables a clear form of exchanging information between the courts.** Thanks to a common database, the completed forms will be available to appropriate court institutions. This is an innovative approach because the current court services of institutions have been set up by different companies and using different technologies. Our solution would unify and standardize the exchange of information between the institutions. It is also important that thanks to our system, there will be fewer human errors, as the basic operations will be automated. An example form for a claim for maintenance is available on our website. In the future, we intend to implement further applications ready to be filled out. After completing the application, the responses are sent to the appropriate institution selected on the basis of the postal code from the address of the respondent. The user can also save the form in PDF format and then print the document.
 
