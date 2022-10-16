@@ -4,18 +4,21 @@ import "./Form.css";
 
 const ID = `alimenty-${uuid()}`;
 
-function handleForm(e) {
-    e.preventDefault();
-}
-
 function Form(props) {
     const wps = useRef();
+
     function handleChange(e) {
         wps.current.textContent = e.target.valueAsNumber * 12 || 0;
     }
+    
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        alert("Wysłano formularz");
+    }
 
     return (
-        <form className="bg-red-300 m-auto p-12 text-lg" onSubmit={handleForm}>
+        <form className="bg-red-100 m-auto p-12 text-lg" onSubmit={handleSubmit}>
             <h4 className="text-sm">Identyfikator sprawy: {ID}</h4>
             <input type="hidden" name="id" value={ID} />
             <div className="date text-right">
@@ -104,9 +107,9 @@ function Form(props) {
                         na rzecz mał. powoda
                         <input type="text" name="lawsuit_1_prosecutor_name_and_surname" placeholder="Imię i nazwisko" />{" "}
                         urodzonego w dniu <input type="date" name="lawsuit_1_prosecutor_birth" /> r.
-                        alimentów w kwocie <input type="number" name="lawsuit_1_alimony_date_end" onInput={handleChange} />{" "}
+                        alimentów w kwocie <input type="number" name="lawsuit_1_alimony_price" onInput={handleChange} min={0} />{" "}
                         zł miesięcznie, płatnych z góry do rąk matki/ojca powoda
-                        do dnia <input type="number" name="lawsuit_1_alimony_price" /> każdego
+                        do dnia <input type="number" name="lawsuit_1_alimony_date_end" min={1} max={31} /> każdego
                         miesiąca, z ustawowymi odsetkami w razie opóźnienia w
                         płatności którejkolwiek z rat;
                     </li>
@@ -114,9 +117,9 @@ function Form(props) {
                         udzielenie zabezpieczenia roszczenia wskazanych w
                         punkcie 1 pozwu poprzez zasądzenie od pozwanego na rzecz
                         małoletniego powoda alimentów w kwocie{" "}
-                        <input type="number" name="lawsuit_2_alimony_price" /> zł miesięcznie, płatnych
+                        <input type="number" name="lawsuit_2_alimony_price" min={0} /> zł miesięcznie, płatnych
                         z góry do rąk matki/ojca powoda do dnia{" "}
-                        <input type="number" name="lawsuit_2_alimony_date_end" /> każdego miesiąca, z
+                        <input type="number" name="lawsuit_2_alimony_date_end" min={1} max={31} /> każdego miesiąca, z
                         ustawowymi odsetkami w razie opóźnienia w płatności
                         którejkolwiek z rat - na czas trwania postępowania;
                     </li>
@@ -230,7 +233,7 @@ function Form(props) {
                     <input type="file" name="attachment" multiple />
                 </div>
             </div>
-            <input type="submit" value="Wyślij" />
+            <input type="submit" value="Wyślij" className="mt-4 cursor-pointer p-2 bg-slate-200 transition-colors hover:bg-slate-300" />
         </form>
     );
 }
