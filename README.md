@@ -81,8 +81,8 @@ W przypadku spraw skomplikowanych, pozwów tradycyjnych, powód nie posiada elek
  2. Strona [127.0.0.1:8000/polls/form/<id>](127.0.0.1:8000/polls/form/<id>) pokazuje szczegóły odpowiedzi o danym id. Jeśli w bazie odpowiedzi nie ma odpowiedzi o danym id, zwracany jest plik JSON z informacją o błędzie. 
  3. Strona [127.0.0.1:8000/polls/courtsinfo/](127.0.0.1:8000/polls/courtsinfo/) zwraca plik JSON zawierający podstawowe informacje na temat sądów rejonowych w Polsce. 
  4. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/login/) pozwala na logowanie użytkownika.
- 5. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/logout/) pozwala na wylogowanie użytkownika.
- 6. Strona [127.0.0.1:8000/login/](127.0.0.1:8000/admin/) pozwala na zarządzanie bazą danych oraz bazą użytkowników.
+ 5. Strona [127.0.0.1:8000/logout/](127.0.0.1:8000/logout/) pozwala na wylogowanie użytkownika.
+ 6. Strona [127.0.0.1:8000/admin/](127.0.0.1:8000/admin/) pozwala na zarządzanie bazą danych oraz bazą użytkowników.
 
  
 🇬🇧
@@ -90,8 +90,8 @@ W przypadku spraw skomplikowanych, pozwów tradycyjnych, powód nie posiada elek
  2. Page [127.0.0.1:8000/polls/form/<id>](127.0.0.1:8000/polls/form/<id>) show the details about the form of particular id. If wrong id is used, a JSON file with error message is returned.
  3. Page [127.0.0.1:8000/polls/courtsinfo/](127.0.0.1:8000/polls/courtsinfo/) displays JSON file representing all avaliable courts in the database. Can be used with AJAX to make the proccess of filling out the form more comfortable for the user.
  4. Page [127.0.0.1:8000/login/](127.0.0.1:8000/login/) allows to login.
- 5. Page [127.0.0.1:8000/login/](127.0.0.1:8000/logout/) allows to logout.
- 6. Page [127.0.0.1:8000/login/](127.0.0.1:8000/admin/) allows to manage the database and the users.
+ 5. Page [127.0.0.1:8000/logout/](127.0.0.1:8000/logout/) allows to logout.
+ 6. Page [127.0.0.1:8000/admin/](127.0.0.1:8000/admin/) allows to manage the database and the users.
 
 
 ## Plan of project
