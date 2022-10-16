@@ -3,7 +3,6 @@
 ## Authors
  - **Karolina Wilamowska** - buisness side
  - **Samuel Jędrzejewski** - frontend developer
- - **Michał Woźniak** - frontend developer
  - **Krzysztof Nazar** - backend developer
 
 
